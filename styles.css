@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    font-size: 1.5em;
+    display: inline-block;
+margin: 0 0 0 0;
+}
+
+nav a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: #ffffff;
+    /* Color de texto para los enlaces */
+    padding: 5px 10px;
+    /* Padding dentro de cada enlace */
+    display: block;
+    /* Hace que los enlaces ocupen todo el espacio disponible en el li */
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+    /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+header {
+    height: 100vh;
+    background-image: url(/img/fondo.jpg);
+    background-repeat: repeat;
+    background-size: 100%  100%;
+}
+.perfil{
+    width: 35xp;
+    height: 10px;
+}
+@media screen and (max-width: 640px) {
+    header{
+        background-image: url(/img/fondo_celular.jpg);
+    }
+}
+@media screen and (max-width: 1300px) {
+    header{
+        background-image: url(/img/fondo_celular.jpg);
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    li{
+        font-size: 1000em;
+    }
+}
