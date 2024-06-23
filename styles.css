@@ -9,6 +9,10 @@ html {
     height: 100vh;
 }
 
+nav {
+    height: 5%;
+}
+
 nav ul {
 
     text-align: center;
@@ -37,16 +41,50 @@ nav a:hover {
 }
 
 header {
-background-image: url(./img/fondo.jpg);
-background-size: 100% 100%;
-background-repeat: no-repeat;
+    background-image: url(./img/fondo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 100vh;
+    text-align: center;
 
+}
+
+.nombres {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    font-size: 1.5em;
+    color: white;
+    border-radius: 40em;
+    background-color: rgba(0, 0, 0, 0.368);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 25%
+}
+
+main {
+    height: 100vh;
 }
 
 .perfil {
     width: 35xp;
     height: 10px;
+}
+
+.info {
+    height: 100vh;
+}
+
+.habilidades {
+    height: 100vh;
 }
 
 @media screen and (max-width: 700px) {
@@ -55,7 +93,7 @@ background-repeat: no-repeat;
     }
 }
 
-@media screen and (min-width: 700px ) and (max-width:1200px) {
+@media screen and (min-width: 700px) and (max-width:1200px) {
     header {
         background-image: url(./img/fondo_tablet.jpg);
     }
