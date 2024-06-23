@@ -5,63 +5,64 @@
 
 body,
 html {
-    width: 98.5vw;
+    width: 100w;
     height: 100vh;
 }
 
 nav ul {
+
     text-align: center;
     list-style-type: none;
-
     padding: 0;
     margin: 0;
 }
 
 nav li {
+
     font-size: 1.5em;
     display: inline-block;
-margin: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 nav a {
+    color: white;
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
-    color: #ffffff;
-    /* Color de texto para los enlaces */
     padding: 5px 10px;
-    /* Padding dentro de cada enlace */
     display: block;
-    /* Hace que los enlaces ocupen todo el espacio disponible en el li */
 }
 
 nav a:hover {
-    background-color: #f0f0f0;
-    /* Cambia el color de fondo al pasar el ratón por encima */
+    color: aquamarine;
+    text-decoration: underline;
 }
 
 header {
+background-image: url(./img/fondo.jpg);
+background-size: 100% 100%;
+
     height: 100vh;
-    background-image: url(./img/fondo.jpg);
-    background-repeat: repeat;
-    background-size: 100%  100%;
+
 }
-.perfil{
+
+.perfil {
     width: 35xp;
     height: 10px;
 }
-@media screen and (max-width: 640px) {
-    header{
+
+@media screen and (max-width: 700px) {
+    header {
         background-image: url(./img/fondo_celular.jpg);
     }
 }
-@media screen and (max-width: 1100px) {
-    header{
-        background-image: url(./img/fondo_celular.jpg);
+
+@media screen and (min-width: 700px ) and (max-width:1200px) {
+    header {
+        background-image: url(./img/fondo_tablet.jpg);
     }
 }
 
 @media screen and (max-width: 2000px) {
-    li{
+    li {
         font-size: 1000em;
     }
 }
