@@ -44,7 +44,38 @@ a {
 
 section {
     padding-top: 4em;
+    height: 100vh;
 }
 .Iconos{
+    width: 1.3em;
+}
+.perfil{
+    width: 5em;
+}
+.Icohabi{
+    width: 5em;
+}
+#home{
+
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoprincipal, .fotoperfil, .habiliadades{
     
+flex-grow: 1;
+}
+.infoprincipal, .fotoperfil{
+    align-content: center;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.1em;
+    width: 45%;
+    height: 45%;
+}
+.habiliadades{
+    height: 55%;
+    width: 100%;
 }
