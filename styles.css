@@ -5,102 +5,43 @@
 
 body,
 html {
-    width: 100w;
+    color: #72DFD0;
+    background-color: #E6F8F6;
+    width: 98.7vw;
     height: 100vh;
-}
-
-nav {
-    height: 5%;
-}
-
-nav ul {
-
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-
-    font-size: 1.5em;
-    display: inline-block;
-    margin: 0 0 0 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-}
-
-nav a:hover {
-    color: aquamarine;
-    text-decoration: underline;
 }
 
 header {
-    background-image: url(./img/fondo.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #03414D;
+    display: flex;
+}
+
+.logo {
+    padding: 10px 20px;
+    width: 50%;
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav,
+a {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
     text-align: center;
-
+    align-content: center;
+    padding: 10px;
+    width: 50%;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.nombres {
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+a {
+    margin: 10px;
 }
 
-.contenido {
-    font-size: 1.5em;
-    color: white;
-    border-radius: 40em;
-    background-color: rgba(0, 0, 0, 0.368);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    height: 25%
-}
-
-main {
-    height: 100vh;
-}
-
-.perfil {
-    width: 35xp;
-    height: 10px;
-}
-
-.info {
-    height: 100vh;
-}
-
-.habilidades {
-    height: 100vh;
-}
-
-@media screen and (max-width: 700px) {
-    header {
-        background-image: url(./img/fondo_celular.jpg);
-    }
-}
-
-@media screen and (min-width: 700px) and (max-width:1200px) {
-    header {
-        background-image: url(./img/fondo_tablet.jpg);
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    li {
-        font-size: 1000em;
-    }
+section {
+    padding-top: 4em;
 }
