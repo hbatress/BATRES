@@ -14,6 +14,7 @@ html {
     overflow-x: hidden; 
 }
 
+
 header {
     width: 98.7%;
     position: fixed;
@@ -134,7 +135,9 @@ section {
     align-content: end;
     font-size: 3em;
 }
-
+main{
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 @media screen and (max-width:1080px ){
     body,
