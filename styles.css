@@ -143,6 +143,12 @@ html {
     background-repeat: repeat-y;
     background-size: cover;
 }
+header{
+    width: 100%;
+}
+.option{
+    display: none;
+}
 #home {
     align-items: center;
     display: inline-flex;
@@ -151,10 +157,10 @@ html {
 
 }
 .titulosdenombres {
-    font-size: 0.8em;
+    font-size: 65%;
 }
 .titulohabilidades{
-    font-size: 2em;
+    font-size:200%;
 }
 section {
     padding-top: 8em;
