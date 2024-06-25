@@ -184,7 +184,8 @@ h3 {
 .fuentes{
     display: none;
 }
-.infoprincipal{
+.infoprincipal, .fotoperfil{
+    height: 100%;
     width: 100%;
 }
 }
