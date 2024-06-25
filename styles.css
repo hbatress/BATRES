@@ -6,17 +6,22 @@
 body,
 html {
     color: #72DFD0;
-    background-color: #E6F8F6;
-    width: 98.7vw;
+    background-image: url(./img/fondomejorado.jpeg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    width: 100vw;
     height: 100vh;
+    overflow-x: hidden; 
 }
 
 header {
-    width: 100%;
+    width: 98.7%;
     position: fixed;
-    background-color: #03414D;
+    background-color: #03404d;
     display: flex;
+    z-index: 1000;
 }
+
 
 .logo {
     padding: 10px 20px;
@@ -44,29 +49,38 @@ a {
 
 section {
     padding-top: 4em;
-    height: 100vh;
+    height: calc(100vh - 4em);
 }
-.Iconos{
+
+.Iconos {
     width: 1.3em;
 }
-.perfil{
+
+.perfil {
     width: 5em;
 }
-.Icohabi{
+
+.Icohabi {
     width: 5em;
 }
-#home{
+
+#home {
 
     justify-content: center;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
 }
-.infoprincipal, .fotoperfil, .habiliadades{
-    
-flex-grow: 1;
+
+.infoprincipal,
+.fotoperfil,
+.habiliadades {
+
+    flex-grow: 1;
 }
-.infoprincipal, .fotoperfil{
+
+.infoprincipal,
+.fotoperfil {
     align-content: center;
     font-family: "Shrikhand", serif;
     font-weight: 400;
@@ -75,7 +89,8 @@ flex-grow: 1;
     width: 45%;
     height: 45%;
 }
-.habiliadades{
+
+.habiliadades {
     font-family: "Chewy", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -84,27 +99,49 @@ flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     height: 45%;
-    width: 100%;
+
 }
-.titulohabilidades, .iconoshabilidades{
+
+.titulohabilidades,
+.iconoshabilidades {
 
     flex-grow: 1;
     width: 100%;
 }
-.iconoshabilidades{
+
+.iconoshabilidades {
 
     margin: 0% 20% 0% 20%;
     display: flex;
     flex-wrap: wrap;
 }
-.fondoicono{
+
+.fondoicono {
+transform:translateZ(5px);
     border-radius: 25px;
-    margin: 1%;
+    margin-right: 5px;
     padding: 2%;
-    background-color:#A0F6D2 ;
+    background-color: #A0F6D2;
     flex-grow: 1;
+    border: 5px #03404d double;
 }
-.titulohabilidades{
+
+.titulohabilidades {
     align-content: end;
     font-size: 3em;
+}
+@media screen and (max-width:700px ){
+    body,
+html {
+    background-image: url(./img/fondomejoradocelular.jpeg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+#home {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
 }
