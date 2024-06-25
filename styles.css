@@ -150,6 +150,7 @@ header{
     display: none;
 }
 #home {
+    height: 100%;
     width: 100%;
     align-items: center;
     display: inline-flex;
@@ -185,7 +186,6 @@ h3 {
     display: none;
 }
 .infoprincipal, .fotoperfil{
-    height: 100%;
     width: 100%;
 }
 }
