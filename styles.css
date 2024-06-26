@@ -129,14 +129,15 @@ nav{
     display: none;
 }
 header{
-
+    align-items: start;
+    text-align: start;
     align-items: start;
 }
 .Letralogo{
-    width: 90%;
+    width:100%;
 }
 .perfilfoto{
-    width: 60%;
+    max-width: 60%;
 }
 .Ainicio{
     font-size: 50%;
