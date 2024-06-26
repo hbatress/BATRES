@@ -125,9 +125,6 @@ img {
 .BInicio {
 height: 50%;
 }
-.perfilfoto{
-width: 20%;
-}
 nav{
     display: none;
 }
@@ -136,7 +133,7 @@ header{
     align-items: start;
 }
 .Letralogo{
-    width: 100%;
+    width: 90%;
 }
 }
 
@@ -175,7 +172,7 @@ header{
 
     50% {
         transform: translateY(40px);
-        font-size: 50px;
+        font-size: 2em;
     }
 
     100% {
