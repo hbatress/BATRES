@@ -116,7 +116,7 @@ img {
     animation: movimiento 2s infinite;
 }
 /*Adaptar*/
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1250px) {
     #Inicio{
         flex-wrap: nowrap;
         flex-direction: column-reverse;
@@ -134,6 +134,12 @@ header{
 }
 .Letralogo{
     width: 90%;
+}
+.perfilfoto{
+    width: 60%;
+}
+.Ainicio{
+    font-size: 50%;
 }
 }
 
