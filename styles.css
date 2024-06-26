@@ -120,10 +120,12 @@ img {
     #Inicio{
         flex-wrap: nowrap;
         flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
-    .Ainicio,
-.BInicio {
-height: 50%;
+.Binicio, .Ainicio{
+    height: 50%;
 }
 nav{
     display: none;
@@ -131,7 +133,6 @@ nav{
 header{
     align-items: start;
     text-align: start;
-    align-items: start;
 }
 .Letralogo{
     width:100%;
@@ -139,9 +140,12 @@ header{
 .perfilfoto{
     max-width: 60%;
 }
-.Ainicio{
-    font-size: 50%;
-}
+.Ainicio {
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+  }
 }
 
 
