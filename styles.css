@@ -149,14 +149,15 @@ flex-wrap:wrap;
 
 }
 .contenierhabilidad{
-    border-radius: 10px;
 width: 10%;
 height: 20%;
-    background-color: white;
 }
 .iconohabilidad{
+ border-radius: 15px;
+    background-color: rgb(255, 255, 255);
 padding: 6px;
-    width:75%;
+height: 50%;
+    width:100%;
 }
 
 /*Adaptar*/
@@ -211,7 +212,6 @@ padding: 6px;
     }
     .contenierhabilidad{
         animation: movimientohabi 3s infinite;
-        height: 14%;
     }
     .iconohabilidad{
         padding: 4px;
