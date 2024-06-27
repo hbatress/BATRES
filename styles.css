@@ -9,14 +9,15 @@ html {
     width: 100vw;
     height: 100vh;
     background-image: url(./img/fondomejorado.jpeg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     scroll-behavior: smooth;
 
 }
 
 main {
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.701);
 }
 
 header {
@@ -91,19 +92,21 @@ section {
 }
 
 .perfilfoto {
-   border-radius: 30px; 
+    border-radius: 30px;
     width: 40%;
     border: 5px solid #66fcf1;
     animation: borderImagen 2s infinite;
 
 }
 
-img {
-    width: 3%;
-}
 
 .Ainicio,
-.BInicio {
+.BInicio,
+.sobreizquierda,
+.sobrederecha,
+.habilidad,
+.info
+{
     width: 100%;
     display: flex;
     align-items: center;
@@ -111,41 +114,109 @@ img {
 }
 
 .Ainicio {
+    font-family: "Playwrite ES", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200px;
+    font-style: normal;
     font-size: 40px;
     flex-direction: column;
-    animation: movimiento 2s infinite;
+    animation: movimiento 2s infinite, cambiocolor 6s infinite;
 }
+
+.sobrederecha,
+.info,
+.habilidad
+{
+    height: 100%;
+    flex-direction: column;
+}
+.titulo{
+text-align: justify;
+    margin: 5px;
+}
+.habilidad{
+    justify-content: start;
+}
+.conteiner{
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+align-items: start;
+flex-wrap:wrap;
+
+}
+.contenierhabilidad{
+    border-radius: 10px;
+width: 10%;
+height: 20%;
+    background-color: white;
+}
+.iconohabilidad{
+padding: 6px;
+    width:75%;
+}
+
 /*Adaptar*/
-@media screen and (max-width:1250px) {
-    #Inicio{
+@media screen and (max-width:600px) {
+
+    body,
+    html {
+        background-image: url(./img/fondomejoradocelular.jpeg);
+    }
+
+    #Inicio {
         flex-wrap: nowrap;
         flex-direction: column-reverse;
         align-items: center;
         align-content: center;
         text-align: center;
     }
-.Binicio, .Ainicio{
-    height: 50%;
-}
-nav{
-    display: none;
-}
-header{
-    align-items: start;
-    text-align: start;
-}
-.Letralogo{
-    width:100%;
-}
-.perfilfoto{
-    max-width: 60%;
-}
-.Ainicio {
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-  }
+
+    .Binicio,
+    .Ainicio {
+        height: 50%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header {
+        align-items: start;
+        text-align: start;
+    }
+
+    .Letralogo {
+        width: 100%;
+    }
+
+    .perfilfoto {
+        max-width: 60%;
+    }
+
+    .Ainicio {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+ .info, .habilidad{
+    width: 90%;
+ }
+    .sobreizquierda{
+        display: none;
+    }
+    .contenierhabilidad{
+        animation: movimientohabi 3s infinite;
+        height: 14%;
+    }
+    .iconohabilidad{
+        padding: 4px;
+    }
+
 }
 
 
@@ -190,23 +261,44 @@ header{
         transform: translateY(0px);
     }
 }
+
 @keyframes borderImagen {
-    
-    0%{
-        border-top: 5px solid #66fcf1; 
+
+    0% {
+        border-top: 5px solid #66fcf1;
     }
-    25%{
-        border-right: 5px  solid #45A29e; 
+
+    25% {
+        border-right: 5px solid #45A29e;
     }
-    50%{
-        border-bottom: 5px  solid #45A29e; 
+
+    50% {
+        border-bottom: 5px solid #45A29e;
 
     }
-    75%{
-        border-left: 5px  solid #45A29e;
+
+    75% {
+        border-left: 5px solid #45A29e;
     }
-    
+
+    100% {
+        border-top: 5px solid #45A29e;
+    }
+}
+@keyframes movimientohabi {
+    0%{
+transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-15px);
+    }
     100%{
-        border-top: 5px  solid #45A29e; 
+        transform: translateX(0px);
     }
 }
