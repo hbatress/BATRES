@@ -134,8 +134,16 @@ section {
 text-align: justify;
     margin: 5px;
 }
+.info{
+height: 30%;
+    width: 90%;
+ }
 .habilidad{
+    width: 90%;
+    border-radius: 20px;
+    background-color: #020202;
     justify-content: start;
+    height: 15%;
 }
 .conteiner{
     padding-top: 15px;
@@ -150,7 +158,7 @@ flex-wrap:wrap;
 }
 .contenierhabilidad{
 width: 10%;
-height: 20%;
+height: 100%;
 }
 .iconohabilidad{
  border-radius: 15px;
@@ -159,6 +167,10 @@ padding: 6px;
 height: 50%;
     width:100%;
 }
+.info{
+    margin-bottom: 20px;
+}
+
 
 /*Adaptar*/
 @media screen and (max-width:600px) {
@@ -204,18 +216,19 @@ height: 50%;
         flex-direction: column;
         justify-content: flex-start;
     }
- .info, .habilidad{
-    width: 90%;
- }
+
     .sobreizquierda{
         display: none;
+        visibility: hidden;
     }
     .contenierhabilidad{
         animation: movimientohabi 3s infinite;
     }
     .iconohabilidad{
-        padding: 4px;
+        
+animation: agrandarimagen 6s infinite;
     }
+
 
 }
 
@@ -300,5 +313,16 @@ transform: translateX(0px);
     }
     100%{
         transform: translateX(0px);
+    }
+}
+@keyframes agrandarimagen {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
