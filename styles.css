@@ -15,11 +15,11 @@ html {
     scroll-behavior: smooth;
 
 }
-/*
+
 main {
-    background-color: rgba(0, 0, 0, 0.701);
+    background-color: rgba(0, 0, 0, 0.70);
 }
-*/
+
 header {
     position: fixed;
     display: flex;
@@ -46,7 +46,7 @@ nav {
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -90,6 +90,7 @@ section {
     align-items: center;
     width: 100%;
 }
+/*
 #Inicio{
 background-color: hsla(0, 0%, 0%, 0.30);
 }
@@ -102,6 +103,7 @@ background-color: hsla(0, 0%, 0%, 0.30);
 #Contacto{
     background-color: hsla(0, 0%, 0%, 0.40);
 }
+    */
 
 .perfilfoto {
     border-radius: 30px;
@@ -132,9 +134,18 @@ background-color: hsla(0, 0%, 0%, 0.30);
     font-style: normal;
     font-size: 40px;
     flex-direction: column;
-    animation: movimiento 2s infinite, cambiocolor 6s infinite;
-}
+    animation: movimiento 2s infinite;
 
+}
+h1{
+    color: #FFFFFF;
+}
+h2{
+    color: #C0C0C0;
+}
+h3{
+    color: #A9A9A9;
+}
 .sobrederecha,
 .info,
 .habilidad
@@ -154,7 +165,7 @@ height: 30%;
     margin-top: 10%;
     width: 90%;
     border-radius: 20px;
-    background-color: #020202;
+    background-color: black;
     justify-content: start;
     height: 20%;
 }
