@@ -17,7 +17,7 @@ html {
 }
 
 main {
-    background-color: rgba(0, 0, 0, 0.70);
+    background-color: rgba(24, 24, 24, 0.674);
 }
 
 header {
@@ -66,7 +66,7 @@ nav {
 }
 
 a:hover {
-    color: #66fcf1;
+    color: #9bfab0;
 }
 
 a:active {
@@ -90,6 +90,7 @@ section {
     align-items: center;
     width: 100%;
 }
+
 /*
 #Inicio{
 background-color: hsla(0, 0%, 0%, 0.30);
@@ -108,8 +109,8 @@ background-color: hsla(0, 0%, 0%, 0.30);
 .perfilfoto {
     border-radius: 30px;
     width: 40%;
-    border: 5px solid #66fcf1;
-    animation: borderImagen 2s infinite;
+    border: 10px double #d0fdd7;
+    animation: borderImagen 6s infinite;
 
 }
 
@@ -119,8 +120,7 @@ background-color: hsla(0, 0%, 0%, 0.30);
 .sobreizquierda,
 .sobrederecha,
 .habilidad,
-.info
-{
+.info {
     width: 100%;
     display: flex;
     align-items: center;
@@ -137,68 +137,74 @@ background-color: hsla(0, 0%, 0%, 0.30);
     animation: movimiento 2s infinite;
 
 }
-h1{
-    color: #FFFFFF;
-}
-h2{
-    color: #C0C0C0;
-}
-h3{
-    color: #A9A9A9;
-}
+
 .sobrederecha,
 .info,
-.habilidad
-{
+.habilidad {
     height: 100%;
     flex-direction: column;
 }
-.titulo{
-text-align: justify;
+
+.titulo2 {
+    text-align: justify;
     margin: 5px;
 }
-.info{
-height: 30%;
+.tituhabilidad{
+    display: block;
+    align-content: center;
+    justify-content: center;
+height: 80%;
+}
+
+.info {
+    height: 30%;
     width: 90%;
- }
-.habilidad{
+}
+
+.habilidad {
     margin-top: 10%;
     width: 90%;
     border-radius: 20px;
-    background-color: black;
+    background-color: #64c27b;
     justify-content: start;
     height: 20%;
 }
-.conteiner{
+
+.conteiner {
     padding-top: 15px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-align-items: start;
-flex-wrap:wrap;
+    align-items: start;
+    flex-wrap: wrap;
 
 }
-.contenierhabilidad{
-width: 10%;
-height: 100%;
+
+.contenierhabilidad {
+    width: 10%;
+    height: 100%;
 }
-.iconohabilidad{
- border-radius: 15px;
+
+.iconohabilidad {
+    border-radius: 15px;
     background-color: rgb(255, 255, 255);
-padding: 6px;
-height: 50%;
-    width:100%;
+    padding: 6px;
+    height: 50%;
+    width: 100%;
 }
-.info{  
+
+.info {
     height: 50%;
     font-size: 1.5em;
 }
-.iconohabilidad:hover{
+
+.iconohabilidad:hover {
     animation: movimientohabi 3s infinite;
 }
-.perfilfoto:hover{
+
+.perfilfoto:hover {
     animation: movimiento 2s infinite;
 }
 
@@ -216,10 +222,12 @@ height: 50%;
         align-items: center;
         align-content: center;
         text-align: center;
+
     }
 
     .Binicio,
     .Ainicio {
+
         height: 50%;
     }
 
@@ -244,22 +252,26 @@ height: 50%;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content:center;
     }
-.habilidad{
-    margin-top: 5%;
-    height: 18%;
-}
-    .sobreizquierda{
+
+    .habilidad {
+        margin-top: 5%;
+        height: 18%;
+    }
+
+    .sobreizquierda {
         height: 0%;
         display: none;
         visibility: hidden;
     }
-    .iconohabilidad{
-        
-animation: movimientohabi 3s infinite;
+
+    .iconohabilidad {
+
+        animation: movimientohabi 3s infinite;
     }
-    .info{  
+
+    .info {
         height: 50%;
         font-size: 1em;
     }
@@ -294,68 +306,86 @@ animation: movimientohabi 3s infinite;
 }
 
 @keyframes movimiento {
-
     0% {
         transform: translateY(0px);
     }
-
-    50% {
-        transform: translateY(40px);
-        font-size: 2em;
+    25% {
+        transform: translateY(-40px); 
     }
-
+    50% {
+        transform: translateY(0px); 
+    }
+    75% {
+        transform: translateY(40px); 
+    }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0px); 
     }
 }
 
 @keyframes borderImagen {
 
     0% {
-        border-top: 5px solid #66fcf1;
+        border-top: 10px double #d0fdd7;
+
     }
 
     25% {
-        border-right: 5px solid #45A29e;
+
+        border-right: 10px double #64c27b;
+
     }
 
     50% {
-        border-bottom: 5px solid #45A29e;
+        border-bottom: 10px double #64c27b;
+
 
     }
 
     75% {
-        border-left: 5px solid #45A29e;
+
+        border-left: 10px double #64c27b;
+
     }
 
     100% {
-        border-top: 5px solid #45A29e;
+
+        border-top: 10px double #64c27b;
+
     }
 }
+
 @keyframes movimientohabi {
-    0%{
-transform: translateX(0px);
+    0% {
+        transform: translateX(0px);
     }
-    25%{
+
+    25% {
         transform: translateX(15px);
     }
-    50%{
+
+    50% {
         transform: translateX(0px);
     }
-    75%{
+
+    75% {
         transform: translateX(-15px);
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
     }
 }
+
 @keyframes agrandarimagen {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.2);
     }
+
     100% {
         transform: scale(1);
     }
