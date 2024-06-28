@@ -66,11 +66,11 @@ nav {
 }
 
 a:hover {
-    color: #9bfab0;
+    color: aqua;
 }
 
 a:active {
-    color: green;
+    color: aquamarine;
 }
 
 section {
@@ -109,8 +109,8 @@ background-color: hsla(0, 0%, 0%, 0.30);
 .perfilfoto {
     border-radius: 30px;
     width: 40%;
-    border: 10px double #d0fdd7;
-    animation: borderImagen 6s infinite;
+    border: 10px ridge aqua;
+    animation: borderImagen 10s infinite;
 
 }
 
@@ -128,6 +128,7 @@ background-color: hsla(0, 0%, 0%, 0.30);
 }
 
 .Ainicio {
+    color: aqua;
     font-family: "Playwrite ES", cursive;
     font-optical-sizing: auto;
     font-weight: 200px;
@@ -165,7 +166,7 @@ height: 80%;
     margin-top: 10%;
     width: 90%;
     border-radius: 20px;
-    background-color: #64c27b;
+    background-color: aqua;
     justify-content: start;
     height: 20%;
 }
@@ -326,31 +327,31 @@ height: 80%;
 @keyframes borderImagen {
 
     0% {
-        border-top: 10px double #d0fdd7;
+        border-top: 10px ridge aqua;
 
     }
 
     25% {
 
-        border-right: 10px double #64c27b;
+        border-right: 10px ridge #09ff00;
 
     }
 
     50% {
-        border-bottom: 10px double #64c27b;
+        border-bottom: 10px ridge #09ff00;
 
 
     }
 
     75% {
 
-        border-left: 10px double #64c27b;
+        border-left: 10px ridge #09ff00;
 
     }
 
     100% {
 
-        border-top: 10px double #64c27b;
+        border-top: 10px ridge #09ff00;
 
     }
 }
