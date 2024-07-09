@@ -106,6 +106,9 @@ background-color: hsla(0, 0%, 0%, 0.30);
 #Proyectos, .conteinetproyc, .proyectosid, .herramientas, .proyectotitulo{
     flex-direction: column;
 }
+#Proyectos{
+    height: 200%;
+}
 .proyect{
     flex-wrap: wrap;
     height: 90%;
@@ -386,7 +389,7 @@ margin: 5%;
     }
 
     .herramientas{
-        font-size: 0.6em;
+        font-size: 0.75em;
         padding: 5px;
         border-radius: 15px;
         height: 100%;
@@ -405,7 +408,17 @@ margin: 5%;
 }
 
 @media screen and (min-width:600px) and (max-width:1100px) {
-    
+    .titulo2, .proyectotitulo{
+        font-size: 0.8em;
+    }
+.herramientas{
+    font-size: 0.6em;
+}
+.mas, .closet{
+    margin-top: 5%;
+    font-size: 0.65em;
+    height: 90% ;
+}
 }
 
 /*Animaciones*/
