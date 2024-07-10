@@ -511,6 +511,12 @@ button {
         height: 90%;
     }
 }
+@media screen  and (min-height:1100px) {
+    section {
+        padding-top: 3em;
+        height: calc(50vh - 3em);
+    }
+}
 
 /*Animaciones*/
 
