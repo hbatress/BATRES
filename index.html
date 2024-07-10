@@ -13,11 +13,14 @@
 
     <title>BATRES</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
     <header>
+            <!--
         <h2 class="Letralogo">BATRES</h2>
+    -->
         <nav>
             <a href="#Inicio">Inicio</a>
             <a href="#SobreMi">Sobre Mi</a>
@@ -46,7 +49,7 @@
                     <h2 class="titulo2">Herber Batres</h2>
                     <p class="titulo2">
                         Soy un estudiante apasionado por el desarrollo web, especialmente en el área de backend.
-                        Estoy enfocado en aprender tecnologías como Node.js, javascript y bases de datos como MySQL.
+                        Estoy enfocado en aprender tecnologías como Node.js, javascript y bases de datos.
                         Aunque todavía estoy en la etapa de aprendizaje y no tengo experiencia laboral,
                         estoy decidido a mejorar mis habilidades y contribuir en proyectos backend de manera efectiva.
                         Emocionado por lo que el futuro me depara en este campo y estoy listo para enfrentar desafíos
@@ -96,7 +99,7 @@
                             </p>
                         </div>
                         <div class="herramientas">
-                            <p >Herramientas utilizadasss</p>
+                            <p >Herramientas utilizadas</p>
                             <div >
                                 <img class="Iconoherramienta" src="./icon/githut.png" alt="githut">
                                 <img class="Iconoherramienta" src="./icon/java.png" alt="css">                           
@@ -104,10 +107,10 @@
                         </div>
                     </div>
                     <div class="botones">
-                        <button class="mas">
+                        <button onclick="mostrarMas(this)" class="mas">
                             Ver más
                         </button>
-                        <button class="closet">Cerrar</button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
                 <div class="conteinetproyc">
@@ -134,10 +137,10 @@
                         </div>
                     </div>
                     <div class="botones">
-                        <button class="mas">
+                        <button onclick="mostrarMas(this)" class="mas">
                             Ver más
                         </button>
-                        <button class="closet">Cerrar</button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
                 <div class="conteinetproyc">
@@ -161,10 +164,10 @@
                         </div>
                     </div>
                     <div class="botones">
-                        <button class="mas">
+                        <button onclick="mostrarMas(this)" class="mas">
                             Ver más
                         </button>
-                        <button class="closet">Cerrar</button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
                 <div class="conteinetproyc">
@@ -186,10 +189,10 @@
                         </div>
                     </div>
                     <div class="botones">
-                        <button class="mas">
+                        <button onclick="mostrarMas(this)" class="mas">
                             Ver más
                         </button>
-                        <button class="closet">Cerrar</button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
                 <div class="conteinetproyc">
@@ -213,10 +216,10 @@
                         </div>
                     </div>
                     <div class="botones">
-                        <button class="mas">
+                        <button onclick="mostrarMas(this)" class="mas">
                             Ver más
                         </button>
-                        <button class="closet">Cerrar</button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
                        
@@ -241,10 +244,10 @@
                         </div>
                     </div>
                     <div class="botones">
-                        <button class="mas">
+                        <button onclick="mostrarMas(this)" class="mas">
                             Ver más
                         </button>
-                        <button class="closet">Cerrar</button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
             
@@ -266,6 +269,7 @@
 
 </ul>
     </footer>
+    <script src="./javascript.js"></script>
 </body>
 
 </html>
