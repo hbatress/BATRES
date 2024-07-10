@@ -53,7 +53,8 @@ nav {
 }
 
 .Letralogo {
-    animation: cambiocolor 3s infinite;
+    display: none;
+    animation: cambiocolor 5s infinite;
 }
 
 a,
@@ -397,11 +398,20 @@ button {
     }
 
     header {
-        align-items: start;
-        text-align: start;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
     }
 
     .Letralogo {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -495,6 +505,9 @@ button {
         width: 3em;
         height: 2em;
     }
+    footer{
+        font-size: 0.7em;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:1100px) {
@@ -529,12 +542,17 @@ button {
         transform: translateX(0px);
 
     }
-
+25%{
+    transform: translateX(-50px);
+    color: aqua;
+}
     50% {
-        transform: translateX(40px);
-        color: aqua;
+        transform: translateX(0px);
     }
-
+75%{
+    transform: translateX(50px);
+    color: aqua;
+}
     100% {
         transform: translateX(0px);
     }
