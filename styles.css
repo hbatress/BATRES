@@ -422,11 +422,15 @@ button {
     }
 
     .sobreizquierda {
+        width: 0;
         height: 0%;
         display: none;
         visibility: hidden;
     }
-
+.sobrederecha{
+    justify-content: flex-start;
+    margin-top: 0px;
+}
     .iconohabilidad {
 
         animation: movimientohabi 3s infinite;
