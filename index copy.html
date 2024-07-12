@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Pixelify+Sans:wght@400..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
+    
+    <title>BATRES</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <div class="contenedor">
+    <header>
+        <div class="arriba">
+            <img class="perfilfoto" src="./img/perfil1.jpg" alt="perfil">
+        </div>
+        <div class="abajo">
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#SobreMi">Sobre Mi</a>
+                <a href="#Proyectos">Proyectos</a> 
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </div>
+    
+
+    </header>
+    <main>
+        <section id="Inicio">
+            <article class="Ainicio">
+                <h1 class="tituloprincipal">Herber Batres</h1>
+                <h2 class="subtitulopricipal">Bienvenido a mi portafolio como desarrollador web</h2>
+                <h3 class="cont">Si quieres ponerte en contacto conmigo escribe a <a class="links" href="">herberb327@gmail.com</a></h3>
+            </article>
+            <article class="BInicio">
+                <div class="boton">
+                    <button class="botonCV"> Descargar mi CV</button>
+                </div>
+
+                <div class="iconos">
+                
+                    <a class="iconosreferencia" href="">
+                        <img src="./icon2/icons8-github-50.png" alt="githut">
+                    </a>
+                    <a class="iconosreferencia" href="">
+                        <img src="./icon2/icons8-facebook-50.png" alt="facebook">
+                    </a>
+                </div>
+
+
+            </article>
+        </section>
+        <section id="SobreMi">
+            <article class="sobrederecha">
+                <div class="tit">
+                    <h1 class="titulo2">SOBRE MI</h1>
+                </div>
+                    <p class="contenido">
+                        Soy un estudiante apasionado por el desarrollo web, en el área de backend y frontend.
+                        Estoy enfocado en aprender tecnologías como Node.js, javascript y bases de datos.
+                        Aunque todavía estoy en la etapa de aprendizaje y no tengo experiencia laboral,
+                        estoy decidido a mejorar mis habilidades y contribuir en proyectos backend de manera efectiva.
+                        Emocionado por lo que el futuro me depara en este campo y estoy listo para enfrentar desafíos
+                    </p>
+                    <h2 class="subtitulo2">
+                        ACTUALMENTE ESTUDIO Y BUSCO AMPLIAR MI CAMPO LABORAL EN EL MUNDO DE DESARROLLO WEB
+                    </h2>
+            </article>
+            <article class="izquierda">
+                <h2>saludos</h2>
+
+            </article>
+        </section>
+        <section id="Proyectos">
+            <h1 class="tituloproyect">Proyectos</h1>
+            <div class="proyect">
+                <div class="conteinetproyc">
+                    <div class="proyectotitulo">
+                        <h3>Proyecto de Bebidas</h3>
+                        <img class="fotoproyect" src="./proyectimg/proyecto1.png" alt="Proyectos">
+                    </div>
+
+                    <div class="proyectosid">
+                        <div class="texto">
+                            <p>Este proyecto consitia en la de ingreso de bebidas consumias en una ubicacion y
+                                utilizando arbol b para organizar los datos
+                            </p>
+                        </div>
+                        <div class="herramientas">
+                            <p>Herramientas utilizadas</p>
+                            <div>
+                                <img class="Iconoherramienta" src="./icon/githut.png" alt="githut">
+                                <img class="Iconoherramienta" src="./icon/java.png" alt="css">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="mostrarMas(this)" class="mas">
+                            Ver más
+                        </button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
+                    </div>
+                </div>
+                <div class="conteinetproyc">
+                    <div class="proyectotitulo">
+                        <h3>Plataforma de proyecto Agil</h3>
+                        <img class="fotoproyect" src="./proyectimg/proyecto2.png" alt="Proyectos">
+                    </div>
+
+                    <div class="proyectosid">
+                        <div class="texto">
+                            <p>Este proyecto en la creacion de una plataforma para la gestion de proyecto Agil
+                                utilizando asignacion de tareas.
+                            </p>
+                        </div>
+                        <div class="herramientas">
+                            <h4>Herramientas utilizadas</h4>
+                            <div>
+                                <img class="Iconoherramienta" src="./icon/githut.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/css.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/html.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/javascript.png" alt="css">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="mostrarMas(this)" class="mas">
+                            Ver más
+                        </button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
+                    </div>
+                </div>
+                <div class="conteinetproyc">
+                    <div class="proyectotitulo">
+                        <h3>Consumo de API Marvel</h3>
+                        <img class="fotoproyect" src="./proyectimg/proyecto3.png" alt="Proyectos">
+                    </div>
+
+                    <div class="proyectosid">
+                        <div class="texto">
+                            <p>Este proyecto consistia en el consumo de una API publica y personalizarla para mostrar la
+                                informacion.</p>
+                        </div>
+                        <div class="herramientas">
+                            <h4>Herramientas utilizadas</h4>
+                            <div>
+                                <img class="Iconoherramienta" src="./icon/githut.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/css.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/html.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/javascript.png" alt="css">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="mostrarMas(this)" class="mas">
+                            Ver más
+                        </button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
+                    </div>
+                </div>
+                <div class="conteinetproyc">
+                    <div class="proyectotitulo">
+                        <h3>Proyecto de gestion de Boleto</h3>
+                        <img class="fotoproyect" src="./proyectimg/proyecto4.png" alt="Proyectos">
+                    </div>
+
+                    <div class="proyectosid">
+                        <div class="texto">
+                            <p>Este proyecto consistia en la asignacion de boletos para la estacion de tren.</p>
+                        </div>
+                        <div class="herramientas">
+                            <h4>Herramientas utilizadas</h4>
+                            <div>
+                                <img class="Iconoherramienta" src="./icon/githut.png" alt="githut">
+                                <img class="Iconoherramienta" src="./icon/java.png" alt="css">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="mostrarMas(this)" class="mas">
+                            Ver más
+                        </button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
+                    </div>
+                </div>
+                <div class="conteinetproyc">
+                    <div class="proyectotitulo">
+                        <h3>Portafolio Web</h3>
+                        <img class="fotoproyect" src="./proyectimg/proyecto5.png" alt="Proyectos">
+                    </div>
+
+                    <div class="proyectosid">
+                        <div class="texto">
+                            <p>Este proyecto consistia en la creacion de un portafolio web para mostrar las habilidades.
+                            </p>
+                        </div>
+                        <div class="herramientas">
+                            <h4>Herramientas utilizadas</h4>
+                            <div>
+                                <img class="Iconoherramienta" src="./icon/githut.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/css.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/html.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/javascript.png" alt="css">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="mostrarMas(this)" class="mas">
+                            Ver más
+                        </button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
+                    </div>
+                </div>
+
+                <div class="conteinetproyc">
+                    <div class="proyectotitulo">
+                        <h3>ChatBoot</h3>
+                        <img class="fotoproyect" src="./proyectimg/proyecto6.png" alt="Proyectos">
+                    </div>
+
+                    <div class="proyectosid">
+                        <div>
+                            <p>Este proyecto consistia en la creacion de un chatboot para un cliente, la informacion la
+                                extrae de una base de datos.</p>
+                        </div>
+                        <div class="herramientas">
+                            <h4>Herramientas utilizadas</h4>
+                            <div>
+                                <img class="Iconoherramienta" src="./icon/githut.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/css.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/react.png" alt="css">
+                                <img class="Iconoherramienta" src="./icon/python.png" alt="css">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button onclick="mostrarMas(this)" class="mas">
+                            Ver más
+                        </button>
+                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--
+        <section id="Contacto">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    -->
+        <section>
+            <div class="habilidad">
+                <div class="tituhabilidad">
+                    <h2>Mis Habilidades</h2>
+                </div>
+
+                <div class="conteiner">
+
+
+                    <div class="contenierhabilidad">
+
+                        <img class="iconohabilidad" src="./icon/css.png" alt="css">
+                    </div>
+                    <div class="contenierhabilidad">
+                        <img class="iconohabilidad" src="./icon/html.png" alt="html">
+                    </div>
+                    <div class="contenierhabilidad">
+                        <img class="iconohabilidad" src="./icon/javascript.png" alt="javascript">
+                    </div>
+                    <div class="contenierhabilidad">
+                        <img class="iconohabilidad" src="./icon/nodejs.jpg" alt="node.js">
+                    </div>
+                    <div class="contenierhabilidad">
+                        <img class="iconohabilidad" src="./icon/react.png" alt="react">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+            <!--
+    <footer>
+        <ul>
+            <li>Telefono: 4057-7785</li>
+            <li>Correo: Herberba327@gmil.com</li>
+
+        </ul>
+    </footer>
+-->
+</div>
+</body>
+
+</html>
