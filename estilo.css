@@ -5,13 +5,15 @@
 
 body,
 html {
+
+    padding: 0;
     margin: 0;
     background-color: #0B0C10;
     color: #C5C6C7;
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
-    
+    overflow-x: hidden; 
 
 }
 /*
@@ -42,6 +44,7 @@ main,header{
     flex-wrap: wrap;
 }
 main {
+    flex: 1;
     margin-left: 15%;
     margin-right: 0;
     width: 85vw;
@@ -109,7 +112,7 @@ border-bottom: 1px solid white;
     font-style: normal;
     font-size: 5em;
     color: #66FCF1;
-    animation: sombras 2s infinite;
+    animation: sombras 2s infinite, aumento 10s infinite;
 }
 .subtitulopricipal, .subtitulo2{
     font-family: "Silkscreen", sans-serif;
