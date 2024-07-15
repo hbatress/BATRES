@@ -13,24 +13,26 @@ html {
     width: 100vw;
     height: 100vh;
     scroll-behavior: smooth;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 10px;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: aquamarine;
     border-radius: 5px;
 
 }
+
 body::-webkit-scrollbar-track {
     background-color: #1F2833;
 }
-    
 
-.contenedor{
+
+.contenedor {
     width: 100%;
     height: 100%;
     margin-right: 0;
@@ -38,11 +40,14 @@ body::-webkit-scrollbar-track {
     flex-direction: row;
     flex-wrap: wrap;
 }
-main,header{
+
+main,
+header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 main {
     flex: 1;
     margin-left: 15%;
@@ -50,18 +55,22 @@ main {
     width: 85vw;
     height: 100%;
 }
-section{
+
+section {
     width: 100%;
 }
+
 header {
     background-color: #1F2833;
-border-right: 1px solid white;
+    border-right: 1px solid white;
     position: fixed;
     flex-direction: column;
     width: 15%;
-    height: 100%;   
+    height: 100%;
 }
-.arriba, .abajo{
+
+.arriba,
+.abajo {
     display: flex;
     justify-content: end;
     height: 50%;
@@ -72,25 +81,37 @@ border-right: 1px solid white;
 
 }
 
-.abajo{
-justify-content: start;
+.abajo {
+    justify-content: start;
     height: 40%;
-width: 100%;
+    width: 100%;
 }
-nav, #Inicio, .Ainicio, .BInicio, .boton, .iconos{
+
+nav,
+#Inicio,
+.Ainicio,
+.BInicio,
+.boton,
+.iconos,
+.habilidad,
+.conteiner,
+.tituhabilidad,
+.Contenidohabilidad {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.perfilfoto{
-animation: sombracajafoto 5s infinite;
+
+.perfilfoto {
+    animation: sombracajafoto 5s infinite;
     border-radius: 15px;
     margin-bottom: 10%;
     width: 7.5em;
     height: 10em;
 }
-a{
+
+a {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -99,16 +120,19 @@ a{
     list-style: none;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: aqua;
 }
-section{
+
+section {
     position: relative;
     width: 100%;
     height: 100%;
-border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
-.tituloprincipal{
+
+.tituloprincipal {
     font-family: "Bungee Shade", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -116,44 +140,55 @@ border-bottom: 1px solid white;
     color: #66FCF1;
     animation: sombras 2s infinite, aumento 10s infinite;
 }
-.subtitulopricipal, .subtitulo2{
+
+.subtitulopricipal,
+.subtitulo2 {
     font-family: "Silkscreen", sans-serif;
-font-weight: 300;
+    font-weight: 300;
     font-style: normal;
     color: #27b6af;
 }
-.cont{
+
+.cont {
     font-size: 1em;
     color: #45A29E;
     font-family: "Teko", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-.Ainicio, .BInicio{
+
+.Ainicio,
+.BInicio {
     height: 100%;
     width: 100%;
     margin: 0 0 5% 0;
 }
-.BInicio{
+
+.BInicio {
     justify-content: start;
 }
-.Ainicio{
+
+.Ainicio {
     justify-content: end;
 }
-.links{
+
+.links {
     animation: colorlink 1s infinite;
 }
-.boton, .iconos{
+
+.boton,
+.iconos {
     flex-direction: row;
     height: 30%;
     width: 100%;
 }
-.iconos{
-    height: 30%;   
+
+.iconos {
+    height: 30%;
 }
 
-.iconosreferencia{
-text-align: center;
+.iconosreferencia {
+    text-align: center;
     margin: 0 10px 0 0;
     background-color: black;
     border-radius: 25px;
@@ -161,42 +196,50 @@ text-align: center;
     width: 3%;
     height: 30%;
 }
-.imgicon{
+
+.imgicon {
     max-width: 100%;
     height: auto;
 }
-.botonCV{
+
+.botonCV {
     font-family: "Rowdies", sans-serif;
     font-style: normal;
     background-color: #66FCF1;
-color: #0B0C10;
-padding: 1%;
-border-radius: 15px;
-animation: sombracaja 5s infinite;
+    color: #0B0C10;
+    padding: 1%;
+    border-radius: 15px;
+    animation: sombracaja 5s infinite;
 
 }
-.botonCV:hover{
-           box-shadow: 0 0 10px 5px aqua;
-    background-color: aqua;
+
+.botonCV:hover {
+    box-shadow: 0 0 10px 5px aqua;
+    background-color: black;
+    color: aqua;
     cursor: pointer;
-animation: boderredondos 2S infinite;
+    animation: boderredondos 2S infinite;
 }
-.imgicon:hover{
+
+.imgicon:hover {
     border-radius: 50%;
-   box-shadow: 0 0 10px 5px aqua;
-   
+    box-shadow: 0 0 10px 5px aqua;
+
 }
-.sobrederecha{
-margin: 8%;
-width: 100%;
-height: 55%;
-position: relative;
+
+.sobrederecha {
+    margin: 8%;
+    width: 100%;
+    height: 55%;
+    position: relative;
 }
-.izquierda{
+
+.izquierda {
     height: 45%;
-    width: 100%;   
+    width: 100%;
 }
-.titulo2{
+
+.titulo2 {
     width: 50%;
     font-family: "Nosifer", sans-serif;
     font-weight: 400;
@@ -205,7 +248,8 @@ position: relative;
     font-size: 3em;
     animation: movimientotitulo 3s infinite;
 }
-.contenido{
+
+.contenido {
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -214,18 +258,22 @@ position: relative;
     margin-right: 20%;
     margin-bottom: 5%;
     font-size: 1.1em;
- color:white;
+    color: white;
 }
-.subtitulo2{
+
+.subtitulo2 {
     margin-right: 20%;
     font-size: 1.3em;
 }
 
-.tit{
+.tit {
     width: 60%;
 }
 
-.animacionico1, .animacionico2, .animacionico3, .animacionico4 {
+.animacionico1,
+.animacionico2,
+.animacionico3,
+.animacionico4 {
     position: absolute;
     width: 4%;
     height: 4%;
@@ -233,220 +281,418 @@ position: relative;
 }
 
 .animacionico1.delayed {
-    animation-delay: 3s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 3s;
+    /* Ajusta el retraso según sea necesario */
 }
 
 .animacionico2.delayed {
-    animation-delay: 6s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 6s;
+    /* Ajusta el retraso según sea necesario */
 }
 
 .animacionico3.delayed {
-    animation-delay: 9s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 9s;
+    /* Ajusta el retraso según sea necesario */
 }
 
 .animacionico4.delayed {
-    animation-delay: 12s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 12s;
+    /* Ajusta el retraso según sea necesario */
 }
 
-.animacionico5,.animacionico6,
-.animacionico7, .animacionico8, .animacionico9 {
+.animacionico5,
+.animacionico6,
+.animacionico7,
+.animacionico8,
+.animacionico9 {
     position: absolute;
     width: 4%;
     height: 4%;
     animation: meteoros 20s infinite;
 }
+
 .animacionico6.delayed {
-    animation-delay: 3s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 3s;
+    /* Ajusta el retraso según sea necesario */
 }
+
 .animacionico7.delayed {
-    animation-delay: 5s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 5s;
+    /* Ajusta el retraso según sea necesario */
 }
+
 .animacionico8.delayed {
-    animation-delay: 7s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 7s;
+    /* Ajusta el retraso según sea necesario */
 }
 
 .animacionico9.delayed {
-    animation-delay: 15s; /* Ajusta el retraso según sea necesario */
+    animation-delay: 15s;
+    /* Ajusta el retraso según sea necesario */
 }
 
 
-    
-.iconosnave{
+
+.iconosnave {
     opacity: 0.5;
     max-width: 100%;
-height: auto;
-filter: drop-shadow(0 0 5px #00ffff);
+    height: auto;
+    filter: drop-shadow(0 0 5px #00ffff);
 
 }
 
+.iconohabilidad {
+    max-width: 60%;
+    height: auto;
+}
 
+.contenierhabilidad1,
+.contenierhabilidad2,
+.contenierhabilidad3,
+.contenierhabilidad4,
+.contenierhabilidad5 {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 3%;
+    height: 10%;
+    width: 5%;
+    display: none;
+    background-color: white
+
+}
+
+/*
+animation: movernavehabi 30s infinite;
+*/
+.contenierhabilidad1.retraso {
+    transform: translate(15vw, 2vh);
+}
+
+.contenierhabilidad2.retraso {
+    transform: translate(15vw, 2vh);
+}
+
+.contenierhabilidad3.retraso {
+    transform: translate(15vw, 2vh);
+}
+
+.contenierhabilidad4.retraso {
+    transform: translate(15vw, 2vh);
+}
+
+.contenierhabilidad5.retraso {
+    transform: translate(15vw, 2vh);
+}
+
+
+.habilidad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.tituhabilidad {
+    height: 30%;
+}
+
+.conteiner {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: start;
+    height: 70%;
+    width: 90%;
+
+}
+
+.Contenidohabilidad {
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: start;
+    height: 70%;
+    flex-direction: row;
+    width: 70%;
+}
+
+.botonesanimar {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.botonanimar {
+    background-color: #00ffff;
+    padding: 1%;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 5px #45A29E;
+    cursor: pointer;
+}
+
+.botonanimar:hover {
+    background-color: #0B0C10;
+    color: aqua;
+    box-shadow: 0 0 10px 5px white;
+
+}
 
 /*ANIMACIONES QUE SE UTILIZARA*/
 @keyframes sombras {
     0% {
         text-shadow: none;
     }
+
     50% {
-        text-shadow: 6px -8px 15px #45A29E; 
+        text-shadow: 6px -8px 15px #45A29E;
     }
+
     100% {
         text-shadow: none;
     }
 }
+
 @keyframes sombracaja {
-    0%{
-box-shadow: none;
+    0% {
+        box-shadow: none;
     }
-    50%{
+
+    50% {
         box-shadow: 0 0 10px 5px #45A29E;
     }
-    100%{
+
+    100% {
         box-shadow: none;
     }
 }
+
 @keyframes sombracajafoto {
-    0%{
+    0% {
         box-shadow: none;
     }
-    25%{
+
+    25% {
         box-shadow: 0 0 10px 5px aqua;
     }
-    50%{
+
+    50% {
         box-shadow: none;
     }
-    75%{
+
+    75% {
         box-shadow: 0 0 10px 5px aqua;
     }
-    100%{
+
+    100% {
         box-shadow: none;
     }
 }
 
 @keyframes colorlink {
-    0%{
-color: white;
+    0% {
+        color: white;
     }
-    50%{
-color: aqua;
+
+    50% {
+        color: aqua;
     }
-    100%{
-color: white;
+
+    100% {
+        color: white;
     }
 }
+
 @keyframes movimientotitulo {
-    0%{
+    0% {
         transform: translateX(0px);
-            }
-            50%{
-                transform: translateX(50px);
-            }
-            100%{
-                transform: translateX(0px);
-            }   
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
+
 @keyframes aumento {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(0.7);
     }
+
     100% {
         transform: scale(1);
     }
 }
+
 @keyframes boderredondos {
-    0%{
+    0% {
         border-radius: 15px;
     }
-    50%{
+
+    50% {
         border-radius: 90px;
     }
-    100%{
+
+    100% {
         border-radius: 15px;
     }
-    
+
 }
+
 @keyframes movernave {
     0% {
         transform: translate(2vw, 2vh) rotate(0deg);
     }
+
     25% {
         transform: translate(78vw, 4vh) rotate(90deg);
     }
+
     50% {
         transform: translate(78vw, 78vh) rotate(180deg);
     }
+
     75% {
         transform: translate(2vw, 78vh) rotate(270deg);
     }
+
     100% {
         transform: translate(2vw, 2vh) rotate(364deg);
     }
 }
+
+@keyframes movernavehabi {
+    0% {
+        background-color: #E0F7FA; /* Suave variante de aqua */
+        color: #FFFFFF;
+        transform: translate(15vw, 2vh) rotate(0deg);
+        box-shadow: 0 0 5px 5px #E0F7FA;
+    }
+
+    25% {
+        background-color: #FFFFFF;
+        transform: translate(60vw, 2vh) rotate(0deg);
+        box-shadow: 0 0 5px 5px #FFFFFF;
+    }
+
+    50% {
+        background-color: #F0F0F0; /* Gris suave */
+        transform: translate(60vw, 30vh) rotate(0deg);
+        box-shadow: 0 0 5px 5px #F0F0F0;
+    }
+
+    75% {
+        background-color: #B2EBF2; /* Otro tono suave de aqua */
+        transform: translate(15vw, 30vh) rotate(0deg);
+        box-shadow: 0 0 10px 5px #B2EBF2;
+    }
+
+    100% {
+        background-color: #E0F7FA;
+        transform: translate(15vw, 2vh) rotate(0deg);
+        box-shadow: 0 0 10px 5px #E0F7FA;
+    }
+}
+
+
 
 @keyframes metoros {
 
     0% {
         transform: translate(10vw, 10vh) rotate(0deg);
     }
+
     5% {
         transform: translate(20vw, 20vh) rotate(45deg);
     }
+
     10% {
         transform: translate(30vw, 15vh) rotate(90deg);
     }
+
     15% {
         transform: translate(40vw, 25vh) rotate(135deg);
     }
+
     20% {
         transform: translate(50vw, 30vh) rotate(180deg);
     }
+
     25% {
         transform: translate(60vw, 35vh) rotate(225deg);
     }
+
     30% {
         transform: translate(70vw, 40vh) rotate(270deg);
     }
+
     35% {
         transform: translate(80vw, 50vh) rotate(315deg);
     }
+
     40% {
         transform: translate(70vw, 60vh) rotate(360deg);
     }
+
     45% {
         transform: translate(60vw, 70vh) rotate(405deg);
     }
+
     50% {
         transform: translate(50vw, 80vh) rotate(450deg);
     }
+
     55% {
         transform: translate(40vw, 70vh) rotate(495deg);
     }
+
     60% {
         transform: translate(30vw, 60vh) rotate(540deg);
     }
+
     65% {
         transform: translate(20vw, 50vh) rotate(585deg);
     }
+
     70% {
         transform: translate(15vw, 40vh) rotate(630deg);
     }
+
     75% {
         transform: translate(10vw, 30vh) rotate(675deg);
     }
+
     80% {
         transform: translate(20vw, 25vh) rotate(720deg);
     }
+
     85% {
         transform: translate(30vw, 20vh) rotate(765deg);
     }
+
     90% {
         transform: translate(20vw, 15vh) rotate(810deg);
     }
+
     95% {
         transform: translate(15vw, 12vh) rotate(855deg);
     }
+
     100% {
         transform: translate(10vw, 10vh) rotate(900deg);
     }
@@ -457,33 +703,43 @@ color: white;
     0% {
         transform: translate(50vw, 90vh) rotate(0deg);
     }
+
     10% {
         transform: translate(35vw, 80vh) rotate(90deg);
     }
+
     20% {
         transform: translate(20vw, 70vh) rotate(180deg);
     }
+
     30% {
         transform: translate(5vw, 60vh) rotate(270deg);
     }
+
     40% {
         transform: translate(15vw, 50vh) rotate(360deg);
     }
+
     50% {
         transform: translate(30vw, 40vh) rotate(450deg);
     }
+
     60% {
         transform: translate(45vw, 30vh) rotate(540deg);
     }
+
     70% {
         transform: translate(55vw, 20vh) rotate(630deg);
     }
+
     80% {
         transform: translate(40vw, 10vh) rotate(720deg);
     }
+
     90% {
         transform: translate(25vw, 5vh) rotate(810deg);
     }
+
     100% {
         transform: translate(50vw, 90vh) rotate(900deg);
     }
