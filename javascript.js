@@ -73,3 +73,29 @@ function animarhabilidad() {
         }
     });
 }
+function activarodesactivar(accion){
+    var div1=document.getElementById('textproyect');
+    var div2=document.getElementById('imagenproyect'); 
+    var div3=document.getElementById('tituloproye');
+    var botonmas=document.getElementById('vermas');
+    var botonmenos=document.getElementById('vermenos');
+    if (accion=='activar'){
+        div1.style.display='flex';
+        div2.style.width='95%';
+        div2.style.height='60%'
+        div3.style.fontSize='1.5em';
+        div1.style.fontSize='0.7em';
+        div1.style.marginTop='5%';
+        botonmas.style.display='none';
+        botonmenos.style.display='flex';
+    }else if(accion=='desactivar'){
+        div1.style.display='none';
+        div2.style.height='100%';
+        div3.style.fontSize='2em';
+        botonmenos.style.display='none';
+        vermas.style.display='flex';
+    }else{
+        console.log('accion no valida');
+    }
+
+}
