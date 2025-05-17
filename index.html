@@ -5,114 +5,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+ES:wght@100..400&family=Tiny5&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Pixelify+Sans:wght@400..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
 
     <title>BATRES</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilo.css">
 
 </head>
 
 <body>
+    <div class="contenedor">
     <header>
-        
-        <h2 class="Letralogo">BATRES</h2>
+        <div class="arriba">
+            <img class="perfilfoto" src="./img/PERFIL_PROFESIONAL.jpg" alt="perfil">
+        </div>
+        <div class="abajo">
+            <nav>
+                <a href="#Inicio">Inicio</a>
+                <a href="#SobreMi">Sobre Mi</a>
+                <a href="#Habilidades">Mis Habilidades</a> 
+                <a href="#Proyectos">Proyectos</a> 
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </div>
     
-        <nav>
-            <a href="#Inicio">Inicio</a>
-            <a href="#SobreMi"  onclick="animar(this)">Sobre Mi</a>
-            <a href="#Proyectos">Proyectos</a>
-            <!--
-            <a href="#Contacto">Contacto</a>
--->
-        </nav>
+
     </header>
     <main>
         <section id="Inicio">
             <article class="Ainicio">
-                <h1>HerberBatres</h1>
-                <h5>Tecnico en Soporte</h5>
+                <h1 class="tituloprincipal">Herber Batres</h1>
+                <h2 class="subtitulopricipal">Bienvenido a mi portafolio como desarrollador web</h2>
+                <h3 class="cont">Si quieres ponerte en contacto conmigo escribe a <a class="links" href="">herberb327@gmail.com</a></h3>
             </article>
             <article class="BInicio">
-                <img class="perfilfoto" src="./img/perfil1.jpg" alt="perfil">
+                <div class="boton">
+                    <button class="botonCV"
+                            onclick="window.location.href='./Curriculum_Vitae/CV_Herber_Batres.pdf'">
+                        Descargar mi CV</button>
+                </div>
+
+                <div class="iconos">
+                
+                    <a class="iconosreferencia" href="">
+                        <img class="imgicon" src="./icon2/icons8-github-50.png" alt="githut">
+                    </a>
+                    <a class="iconosreferencia" href="">
+                        <img  class="imgicon" src="./icon2/icons8-facebook-50.png" alt="facebook">
+                    </a>
+                </div>
+
+
             </article>
         </section>
         <section id="SobreMi">
-            <article class="sobreizquierda">
-                <img class="perfilfoto" src="./img/perfil2.jpg" alt="perfil">
-            </article>
+
+            <div class="animacionico1 delayed">
+                <img class="iconosnave" src="./icon2/nave_2-removebg-preview.png" alt="nave">
+            </div> 
+            <div class="animacionico2 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div> 
+            
+            <div class="animacionico3 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div> 
+            
+            <div class="animacionico4 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div> 
+            
+            <div class="animacionico5 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div> 
+            
+            <div class="animacionico6 delayed">
+                <img class="iconosnave" src="./icon2/nave_2-removebg-preview.png" alt="nave">
+            </div>    
+            
+            <div class="animacionico7 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div>    
+            
+            <div class="animacionico8 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div>   
+            
+            <div class="animacionico9 delayed">
+                <img class="iconosnave" src="./icon2/nave 2.png" alt="nave">
+            </div>
+            
             <article class="sobrederecha">
-                <div class="info">
-                    <h2 class="titulo2">Herber Batres</h2>
-                    <p class="titulo2">
+
+                <div class="tit">
+                    <h1 class="titulo2">SOBRE MI</h1>
+                </div>
+                    <p class="contenido">
                         Soy un estudiante apasionado por el desarrollo web, en el área de backend y frontend.
                         Estoy enfocado en aprender tecnologías como Node.js, javascript y bases de datos.
                         Aunque todavía estoy en la etapa de aprendizaje y no tengo experiencia laboral,
                         estoy decidido a mejorar mis habilidades y contribuir en proyectos backend de manera efectiva.
                         Emocionado por lo que el futuro me depara en este campo y estoy listo para enfrentar desafíos
                     </p>
-                </div>
-                <div class="habilidad">
-                    <div class="tituhabilidad">
-                        <h2>Mis Habilidades</h2>
-                    </div>
-
-                    <div class="conteiner">
-
-
-                        <div class="contenierhabilidad">
-
-                            <img class="iconohabilidad" src="./icon/css.png" alt="css">
-                        </div>
-                        <div class="contenierhabilidad">
-                            <img class="iconohabilidad" src="./icon/html.png" alt="html">
-                        </div>
-                        <div class="contenierhabilidad">
-                            <img class="iconohabilidad" src="./icon/javascript.png" alt="javascript">
-                        </div>
-                        <div class="contenierhabilidad">
-                            <img class="iconohabilidad" src="./icon/nodejs.jpg" alt="node.js">
-                        </div>
-                        <div class="contenierhabilidad">
-                            <img class="iconohabilidad" src="./icon/react.png" alt="react">
-                        </div>
-                    </div>
-                </div>
+                    <h2 class="subtitulo2">
+                        ACTUALMENTE ESTUDIO Y BUSCO AMPLIAR MI CAMPO LABORAL EN EL MUNDO DE DESARROLLO WEB
+                    </h2>
+ 
             </article>
+  
+        </section>
+        <section id="Habilidades">
+            <div class="habilidad">
+                <div class="tituhabilidad">
+                    <h2>Mis Habilidades</h2>
+                </div>
+            </div>
+            <div class="botonesanimar">
+                <button class="botonanimar" onclick="animarhabilidad()" id="botonhabilidades">Preciona Aqui</button>
+            </div>
+<div class="Contenidohabilidad">
+                    <div class="contenierhabilidad1 retraso">
+
+                        <img class="iconohabilidad" src="./icon/css.png" alt="css">
+                    </div>  
+                    <div class="contenierhabilidad2 retraso">
+                        <img class="iconohabilidad" src="./icon/html.png" alt="html">
+                    </div>
+                    <div class="contenierhabilidad3 retraso">
+                        <img class="iconohabilidad" src="./icon/javascript.png" alt="javascript">
+                    </div>
+                    <div class="contenierhabilidad4 retraso">
+                        <img class="iconohabilidad" src="./icon/nodejs.jpg" alt="node.js">
+                    </div>
+                    <div class="contenierhabilidad5 retraso">
+                        <img class="iconohabilidad" src="./icon/react.png" alt="react">
+                    </div>
+                </div>
+
         </section>
         <section id="Proyectos">
             <h1 class="tituloproyect">Proyectos</h1>
             <div class="proyect">
                 <div class="conteinetproyc">
-                    <div class="proyectotitulo">
-                        <h3>Proyecto de Bebidas</h3>
-                        <img class="fotoproyect" src="./proyectimg/proyecto1.png" alt="Proyectos">
+                    <div id="imagenproyect" class="proyectotitulo">
+                        <div  id="tituloproye" class="tituloproyects">
+                            <h5>Proyecto de Bebidas</h5>
+                        </div>
+                      <div class="conteinerimagen" >
+                        <img class="fotoproyect" src="./proyectimg/proyecto1.png" alt="Proyectos"></div>
+
+
+                        <div class="botones">
+                            <button onclick="activarodesactivar('activar')" id="vermas" class="mas">
+                                Ver más
+                            </button>
+                            <button onclick="activarodesactivar('desactivar')"  id="vermenos" class="closet">Cerrar</button>
+                        </div>
+
                     </div>
 
-                    <div class="proyectosid">
+                    <div id="textproyect" class="proyectosid">
+
                         <div class="texto">
                             <p>Este proyecto consitia en la de ingreso de bebidas consumias en una ubicacion y
                                 utilizando arbol b para organizar los datos
                             </p>
                         </div>
-                        <div class="herramientas">
-                            <p>Herramientas utilizadas</p>
-                            <div>
+                        <div  class="herramientas">
                                 <img class="Iconoherramienta" src="./icon/githut.png" alt="githut">
                                 <img class="Iconoherramienta" src="./icon/java.png" alt="css">
-                            </div>
+
                         </div>
+                        
                     </div>
-                    <div class="botones">
-                        <button onclick="mostrarMas(this)" class="mas">
-                            Ver más
-                        </button>
-                        <button onclick="cerrar(this)" class="closet">Cerrar</button>
-                    </div>
+
                 </div>
+                <!--
                 <div class="conteinetproyc">
                     <div class="proyectotitulo">
                         <h3>Plataforma de proyecto Agil</h3>
@@ -253,7 +326,7 @@
                         <button onclick="cerrar(this)" class="closet">Cerrar</button>
                     </div>
                 </div>
-
+-->
             </div>
         </section>
         <!--
@@ -264,15 +337,10 @@
             <div></div>
         </section>
     -->
-    </main>
-    <footer>
-        <ul>
-            <li>Telefono: 4057-7785</li>
-            <li>Correo: Herberba327@gmil.com</li>
 
-        </ul>
-    </footer>
-    <script src="./javascript.js"></script>
+    </main>
+</div>
+<script src="./javascript.js"></script>
 </body>
 
 </html>

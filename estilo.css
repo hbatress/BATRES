@@ -855,3 +855,109 @@ animation: movernavehabi 30s infinite;
         transform: translate(50vw, 90vh) rotate(900deg);
     }
 }
+/* Media Queries para Responsividad */
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .arriba, .abajo {
+        flex-direction: row;
+        height: auto;
+        padding: 10px;
+    }
+
+    .perfilfoto {
+        width: 5em;
+        height: 7em;
+        margin-bottom: 5%;
+    }
+
+    .tituloprincipal {
+        font-size: 3em;
+    }
+
+    .conteinetproyc {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .iconosreferencia {
+        width: 8%;
+    }
+}
+
+/* Móviles y pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    .tituloprincipal {
+        font-size: 2em;
+    }
+
+    .titulo2 {
+        font-size: 2em;
+        width: 90%;
+    }
+
+    .contenido {
+        margin-right: 5%;
+        font-size: 1em;
+    }
+
+    .conteinetproyc {
+        width: 90%;
+    }
+
+    .proyect {
+        justify-content: center;
+    }
+
+    .herramientas {
+        flex-wrap: wrap;
+    }
+
+    .Iconoherramienta {
+        margin: 5px;
+    }
+
+    a {
+        margin-top: 10%;
+    }
+
+    .botonCV {       padding: 2%;
+    }
+
+    .iconosreferencia {
+        width: 12%;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media screen and (max-width: 320px) {
+    .tituloprincipal {
+        font-size: 1.5em;
+    }
+
+    .titulo2 {
+        font-size: 1.5em;
+    }
+
+    .subtitulo2 {
+        font-size: 1em;
+    }
+
+    .botonCV {
+        padding: 3%;
+        font-size: 0.9em;
+    }
+}
