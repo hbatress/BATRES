@@ -130,42 +130,19 @@ section {
     }
 
     header {
-        position: fixed;
-        width: 100%;
-        height: 65px;
-        min-height: 65px;
-        bottom: 0;
+        display: none; /* Oculta completamente el header */
+        pointer-events: none; /* Elimina cualquier interacción */
+        visibility: hidden; /* Asegura que no sea visible */
     }
 
     .perfilfoto {
         display: none;
     }
 
-    .abajo nav {
-        flex-direction: row;
-        justify-content: space-between; /* Distribuye el espacio entre los elementos */
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding: 5px 15px; /* Añadimos padding horizontal */
-        height: 100%;
-        align-items: flex-start; /* Alinea los elementos arriba */
-    }
-
-    .abajo nav a {
-        padding: 6px 10px;
-        white-space: nowrap;
-        text-align: center; /* Centra el texto */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        justify-content: flex-start; /* Alinea el contenido arriba */
-    }
-
     main {
         margin-left: 0;
         width: 100%;
-        margin-bottom: 65px;
+        margin-bottom: 0; /* Eliminamos el margen inferior ya que no hay header */
     }
 
     section {
