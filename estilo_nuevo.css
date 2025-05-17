@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -124,7 +125,7 @@ section {
 .Contenidohabilidad {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    gap: 1rem;
     padding: 20px;
     width: 100%;
 }
@@ -329,25 +330,15 @@ img {
     filter: brightness(1.8) drop-shadow(0 0 15px #4da6ff);
 
 }
-.sobrederecha {
-    background: rgba(13, 17, 33, 0.85);
-    border-radius: 20px;
-    padding: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 255, 0.1),
-    inset 0 0 20px rgba(0, 149, 255, 0.15);
-    max-width: 800px;
-    margin: 0 auto;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 149, 255, 0.2);
-}
+
 
 .tit {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
 .titulo2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #00ffff;
     text-align: center;
@@ -393,13 +384,218 @@ img {
     letter-spacing: 0.5px;
     border: 1px solid rgba(0, 149, 255, 0.3);
 }
+/* Estilo común para ambas secciones */
+#SobreMi,
+#Habilidades {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
 
-/* Efecto hover para el artículo completo */
-.sobrederecha:hover {
+.sobrederecha {
+    background: rgba(13, 17, 33, 0.85);
+    border-radius: 20px;
+    padding: 2rem; /* Reducido de 3rem a 2rem */
+    box-shadow: 0 10px 30px rgba(0, 0, 255, 0.1),
+    inset 0 0 20px rgba(0, 149, 255, 0.15);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 149, 255, 0.2);
+    max-height: 450px; /* Altura máxima fija */
+    overflow-y: auto; /* Permite scroll si el contenido excede */
+}
+
+.Contenidohabilidad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem; /* Reducido de 2rem a 1.5rem */
+    width: 100%;
+}
+
+/* Ajuste del espaciado interno del grid */
+.skill-card {
+    padding: 0.5rem;
+}
+
+/* Personalización del scrollbar */
+.sobrederecha::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sobrederecha::-webkit-scrollbar-track {
+    background: rgba(13, 17, 33, 0.5);
+    border-radius: 10px;
+}
+
+.sobrederecha::-webkit-scrollbar-thumb {
+    background: rgba(0, 149, 255, 0.3);
+    border-radius: 10px;
+}
+
+/* Media query para ajustes responsivos */
+@media (max-width: 768px) {
+    .sobrederecha {
+        max-height: 500px;
+        padding: 1.5rem;
+    }
+
+    .Contenidohabilidad {
+        gap: 1rem;
+    }
+}
+/* Media query para responsividad */
+@media (max-width: 850px) {
+    .sobrederecha {
+        margin: 1rem;
+        padding: 2rem;
+        max-width: calc(100% - 2rem); /* Ajusta el ancho máximo en móviles */
+    }
+
+    .Contenidohabilidad {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+}
+/* Estilos para las tarjetas de habilidades */
+.skill-card {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    perspective: 1000px;
+}
+
+.skill-content {
+    position: relative;
+    background: rgba(13, 17, 33, 0.95);
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 149, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Estilo para la imagen */
+.iconohabilidad {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Overlay con la información */
+.skill-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 17, 33, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el texto en el overlay */
+.skill-overlay h3 {
+    color: #4da6ff;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    text-shadow: 0 0 10px rgba(77, 166, 255, 0.5);
+}
+
+.skill-overlay p {
+    color: #a3e4f8;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.click-info {
+    color: #00ffff;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.7;
+}
+
+/* Efectos hover */
+.skill-card:hover .skill-content {
     transform: translateY(-5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 15px 40px rgba(0, 85, 255, 0.2),
-    inset 0 0 30px rgba(0, 149, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 149, 255, 0.2);
+}
+
+.skill-card:hover .skill-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-card:hover .iconohabilidad {
+    transform: scale(1.1);
+}
+
+/* Efecto de brillo */
+.skill-content::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+            45deg,
+            transparent,
+            rgba(77, 166, 255, 0.1),
+            transparent
+    );
+    transform: rotate(45deg);
+    transition: 0.6s;
+}
+
+.skill-card:hover .skill-content::before {
+    animation: shine 1.5s infinite;
+}
+
+/* Animación del brillo */
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(45deg);
+    }
+}
+
+/* Efecto al hacer click */
+.skill-card:active .skill-content {
+    transform: scale(0.95);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    .iconohabilidad {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill-overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .skill-overlay p {
+        font-size: 0.8rem;
+    }
 }
 
 /* Animación de entrada con efecto espacial */
