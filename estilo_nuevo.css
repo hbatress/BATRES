@@ -1094,3 +1094,266 @@ h1, h2, p, .titulo2, .subtitulo2, .contenido, article, .proyecto-card {
         transform: scale(1);
     }
 }
+/* Estilos base actualizados */
+.contacto-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    background: rgba(13, 17, 33, 0.85);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 149, 255, 0.2);
+    animation: 0.8s ease-out 0s 1 normal forwards running fadeInUp, 3s ease 0s infinite normal none running borderGlow;
+    box-shadow: rgba(0, 0, 255, 0.1) 0px 10px 30px, rgba(0, 149, 255, 0.15) 0px 0px 20px inset;
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+/* Estilos globales para enlaces */
+a,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Título principal con efecto futurista */
+.titulo-contacto {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3.5em;
+    color: rgb(163, 228, 248);
+    font-family: "Bungee Shade", cursive;
+    text-shadow: 0 0 10px rgba(77, 166, 255, 0.5),
+    0 0 20px rgba(77, 166, 255, 0.3),
+    0 0 30px rgba(77, 166, 255, 0.2);
+    letter-spacing: 2px;
+    animation: titleGlow 3s infinite;
+}
+
+/* Subtítulo mejorado */
+.contacto-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(163, 228, 248);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(77, 166, 255, 0.4);
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(163, 228, 248, 0.8), rgb(77, 166, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Descripción con efecto neón */
+.contacto-descripcion {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: rgb(163, 228, 248);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(77, 166, 255, 0.3);
+}
+
+/* Items de contacto con diseño futurista */
+.contacto-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    background: rgba(13, 17, 33, 0.6);
+    border: 1px solid rgba(0, 149, 255, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transform: perspective(1000px) translateZ(0);
+    transition: all 0.3s ease;
+}
+
+.contacto-item i {
+    font-size: 24px;
+    color: rgb(77, 166, 255);
+    animation: iconPulse 2s infinite;
+}
+
+.contacto-item span {
+    color: rgb(163, 228, 248);
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+/* Redes sociales con diseño cyber */
+.redes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.red-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(13, 17, 33, 0.7);
+    border: 1px solid rgba(0, 149, 255, 0.3);
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.red-social::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(77, 166, 255, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.red-social:hover::before {
+    opacity: 1;
+    animation: rotateBg 2s infinite linear;
+}
+
+.red-social i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: rgb(77, 166, 255);
+    transition: all 0.3s ease;
+}
+
+.red-social span {
+    font-size: 1em;
+    color: rgb(163, 228, 248);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.red-social:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px rgba(77, 166, 255, 0.3);
+    border-color: rgb(77, 166, 255);
+}
+
+.red-social:hover i {
+    color: rgb(163, 228, 248);
+    transform: scale(1.2);
+    text-shadow: 0 0 20px rgba(77, 166, 255, 0.8);
+}
+
+/* Estado activo de los enlaces */
+.red-social:active,
+.red-social:focus {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 0 10px rgba(77, 166, 255, 0.2);
+}
+
+/* Animaciones */
+@keyframes titleGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(77, 166, 255, 0.5),
+        0 0 20px rgba(77, 166, 255, 0.3),
+        0 0 30px rgba(77, 166, 255, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(77, 166, 255, 0.8),
+        0 0 30px rgba(77, 166, 255, 0.5),
+        0 0 40px rgba(77, 166, 255, 0.3);
+    }
+}
+
+@keyframes iconPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+@keyframes rotateBg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes borderGlow {
+    0%, 100% {
+        box-shadow: rgba(0, 149, 255, 0.2) 0px 0px 20px;
+    }
+    50% {
+        box-shadow: rgba(0, 149, 255, 0.4) 0px 0px 30px;
+    }
+}
+
+/* Scrollbar personalizado */
+.contacto-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.contacto-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 149, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(77, 166, 255, 0.5);
+}
+
+.contacto-container::-webkit-scrollbar-track {
+    background: rgba(13, 17, 33, 0.5);
+    border-radius: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .titulo-contacto {
+        font-size: 2.5em;
+    }
+
+    .redes-grid {
+        flex-wrap: wrap;
+    }
+
+    .red-social {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-contacto {
+        font-size: 2em;
+    }
+
+    .contacto-info h2 {
+        font-size: 1.5em;
+    }
+
+    .red-social {
+        width: 100%;
+    }
+}
